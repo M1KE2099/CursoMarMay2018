@@ -14,5 +14,10 @@ namespace PruebasUnitarias
             List<Rol> listado = Rol.traerTodos();
                 Assert.AreEqual<bool>(true, listado.Count > 0);
         }
+        public void guardar()
+        {
+            List<Rol> listado = Rol.traerTodos();
+            Assert.AreEqual<bool>(true, listado.Count > 0);
+        }
     }
 }
