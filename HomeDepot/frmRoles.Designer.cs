@@ -40,7 +40,7 @@
             this.lblIdRol = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
             this.lblDescripcion = new System.Windows.Forms.Label();
-            this.chkEsActivo = new System.Windows.Forms.CheckBox();
+            this.btnNuevo = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRoles)).BeginInit();
             this.SuspendLayout();
             // 
@@ -87,7 +87,7 @@
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Location = new System.Drawing.Point(161, 385);
+            this.btnGuardar.Location = new System.Drawing.Point(176, 385);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(83, 39);
             this.btnGuardar.TabIndex = 1;
@@ -103,6 +103,7 @@
             this.btnEliminar.TabIndex = 2;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // txtIdRol
             // 
@@ -154,22 +155,22 @@
             this.lblDescripcion.TabIndex = 8;
             this.lblDescripcion.Text = "Descripcion:";
             // 
-            // chkEsActivo
+            // btnNuevo
             // 
-            this.chkEsActivo.AutoSize = true;
-            this.chkEsActivo.Location = new System.Drawing.Point(134, 356);
-            this.chkEsActivo.Name = "chkEsActivo";
-            this.chkEsActivo.Size = new System.Drawing.Size(83, 17);
-            this.chkEsActivo.TabIndex = 9;
-            this.chkEsActivo.Text = "¿Es Activo?";
-            this.chkEsActivo.UseVisualStyleBackColor = true;
+            this.btnNuevo.Location = new System.Drawing.Point(51, 385);
+            this.btnNuevo.Name = "btnNuevo";
+            this.btnNuevo.Size = new System.Drawing.Size(82, 39);
+            this.btnNuevo.TabIndex = 9;
+            this.btnNuevo.Text = "Nuevo";
+            this.btnNuevo.UseVisualStyleBackColor = true;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // frmRoles
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(693, 436);
-            this.Controls.Add(this.chkEsActivo);
+            this.Controls.Add(this.btnNuevo);
             this.Controls.Add(this.lblDescripcion);
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.lblIdRol);
@@ -202,6 +203,6 @@
         private System.Windows.Forms.Label lblIdRol;
         private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.Label lblDescripcion;
-        private System.Windows.Forms.CheckBox chkEsActivo;
+        private System.Windows.Forms.Button btnNuevo;
     }
 }

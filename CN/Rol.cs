@@ -26,12 +26,12 @@ namespace CN
         #endregion
         #region Constructores
 
-        public Rol(string _nombre, int _idRol, string _descripcion, bool _esActivo)
+        public Rol(string _nombre, int _idRol, string _descripcion) //, bool _esActivo
         {
             this.nombre = _nombre;
             this.descripcion = _descripcion;
             this.idRol = _idRol;
-            this.esActivo = _esActivo;
+          //  this.esActivo = _esActivo;
         }
 
 
@@ -56,7 +56,7 @@ namespace CN
 
             parametros.Add(new SqlParameter("@nombre", nombre));
             parametros.Add(new SqlParameter("@descripcion", descripcion));
-            parametros.Add(new SqlParameter("@esActivo", esActivo));
+           //parametros.Add(new SqlParameter("@esActivo", esActivo));
 
             try
             {
